@@ -16,14 +16,14 @@ local function blocking(a, b, c)
 end
 
 local interval = timer.setInterval(1000, print, "step")
-print("Returned:", work(blocking, 3, 4, 5))
+print("returned:", work(blocking, 3, 4, 5))
 timer.clearInterval(interval)
 ```
 ```
 step
 step
 step
-returned:	9,	-1
+returned:	9	-1
 ```
 
 
