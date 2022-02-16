@@ -1,3 +1,5 @@
+***Note:** This project was/is more of a proof-of-concept than production code. Be careful when using threads in luvit; this function creates a new thread every time it's called, and you may very well be better off creating a thread once, queueing things to it and managing coroutines yourself.*
+
 # coro-thread-work
 
 This is a very simple utility that uses the `thread` module and coroutines to run a function sync-style in a separate thread without blocking the event loop.
